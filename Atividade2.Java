@@ -6,7 +6,14 @@ public class Produto {
     private double preco;
     private int qtdeestoque;
 
-    //Getters e Setters
+    // Construtor
+    public Produto(String nome, double preco, int qtdeestoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.qtdeestoque = qtdeestoque;
+    }
+
+    // Getters e Setters
 
         public String getNome(){
             return nome;
