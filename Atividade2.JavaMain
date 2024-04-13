@@ -9,17 +9,17 @@ public class produtoMain {
 
     Scanner scanner = new Scanner(System.in);
 
-    Produto p1 = new Produto();
+    Produto p1 = new Produto("Iphone 15" , 4899.80 , 12);
     p1.setNome("Iphone 15");
     p1.setPreco(4899.80);
     p1.setQtdeestoque(12);
 
-    Produto p2 = new Produto();
+    Produto p2 = new Produto("Xiaomi 14" , 14800.90 , 3);
     p2.setNome("Xiaomi 14");
     p2.setPreco(14800.90);
     p2.setQtdeestoque(3);
 
-    Produto p3 = new Produto();
+    Produto p3 = new Produto("Samsung Galaxy A23" , 2570.75 , 7);
     p3.setNome("Samsung Galaxy A23");
     p3.setPreco(2570.75);
     p3.setQtdeestoque(7);
