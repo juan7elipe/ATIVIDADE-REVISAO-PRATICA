@@ -1,0 +1,54 @@
+package main;
+import objetos.Produto;
+import java.util.Scanner;
+
+public class produtoMain {
+    public static void main(String[] args) {
+
+    int opcao;
+
+    Scanner scanner = new Scanner(System.in);
+
+    Produto p1 = new Produto();
+    p1.setNome("Iphone 15");
+    p1.setPreco(4899.80);
+    p1.setQtdeestoque(12);
+
+    Produto p2 = new Produto();
+    p2.setNome("Xiaomi 14");
+    p2.setPreco(14800.90);
+    p2.setQtdeestoque(3);
+
+    Produto p3 = new Produto();
+    p3.setNome("Samsung Galaxy A23");
+    p3.setPreco(2570.75);
+    p3.setQtdeestoque(7);
+
+    //---------------------------//
+
+        System.out.println("Digite a preferência do Celular conforme o número:");
+        System.out.println("1- Iphone");
+        System.out.println("2- Xiaomi");
+        System.out.println("3- Samsung");
+        opcao = scanner.nextInt();
+
+        if(opcao == 1){
+            System.out.println("Nome: " + p1.getNome());
+            System.out.println("Preço: " + p1.getPreco());
+            System.out.println("Quantidade em estoque: " + p1.getQtdeestoque());
+        }
+        if (opcao == 2) {
+            System.out.println("Nome: " + p2.getNome());
+            System.out.println("Preço: " + p2.getPreco());
+            System.out.println("Quantidade em estoque: " + p2.getQtdeestoque());
+        }
+        if (opcao == 3){
+            System.out.println("Nome: " + p3.getNome());
+            System.out.println("Preço: " + p3.getPreco());
+            System.out.println("Quantidade em estoque: " + p3.getQtdeestoque());
+        }
+
+        scanner.close();
+
+    }
+}
