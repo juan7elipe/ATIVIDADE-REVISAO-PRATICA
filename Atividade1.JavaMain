@@ -4,7 +4,7 @@ import objetos.Carro;
 public class carroMain {
     public static void main(String[] args) {
 
-        Carro c1 = new Carro();
+        Carro c1 = new Carro("Chevrolet" , "Cruze LTZ" , 2023, "Preto");
 
         c1.setMarca("Chevrolet");
         c1.setModelo("Cruze LTZ");
