@@ -6,6 +6,13 @@ package objetos;
         private int ano;
         private String cor;
 
+        // Construtor
+        public Carro(String marca, String modelo, int ano, String cor){
+            this.marca = marca;
+            this.modelo = modelo;
+            this.ano = ano;
+            this.cor = cor;
+        }
 
         // Getters e Setters
         public String getMarca() {
@@ -42,3 +49,11 @@ package objetos;
         }
 
     }
+
+
+
+
+
+
+
+
