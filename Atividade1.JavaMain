@@ -1,0 +1,24 @@
+package main;
+import objetos.Carro;
+
+public class carroMain {
+    public static void main(String[] args) {
+
+        Carro c1 = new Carro();
+
+        c1.setMarca("Chevrolet");
+        c1.setModelo("Cruze LTZ");
+        c1.setAno(2023);
+        c1.setCor("Preto");
+
+    //-------------------------//
+
+        System.out.println("ESPECIFICAÇÕES DO CARRO:");
+        System.out.println();
+        System.out.println("Marca: " + c1.getMarca());
+        System.out.println("Modelo: " + c1.getModelo());
+        System.out.println("Ano: " + c1.getAno());
+        System.out.println("Cor: " + c1.getCor());
+
+    }
+}
