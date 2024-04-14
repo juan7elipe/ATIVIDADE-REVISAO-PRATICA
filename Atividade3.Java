@@ -1,13 +1,13 @@
 package objetos;
 
-public class Loja {
+public class Produto1 {
 
     private String nome;
     private double preco;
     private int qtdeestoque;
 
     // Construtor
-    public Loja (String nome , double preco, int qtdeestoque){
+    public Produto1(String nome , double preco, int qtdeestoque){
         this.nome = nome;
         this.preco = preco;
         this.qtdeestoque = qtdeestoque;
