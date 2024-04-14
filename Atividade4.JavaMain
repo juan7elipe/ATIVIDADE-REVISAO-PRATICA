@@ -1,0 +1,30 @@
+package main;
+import objetos.Circulo;
+import java.util.Scanner;
+
+public class circuloMain {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String cor = "Verde";
+
+        System.out.println("Digite o raio do círculo:");
+        float raio = scanner.nextFloat();
+        scanner.nextLine();
+        Circulo circulo = new Circulo(raio);
+
+        System.out.println("Área do círculo: " + circulo.calcularArea());
+
+        System.out.println("Perímetro do círculo: " + circulo.calcularPerimetro());
+
+        System.out.println("Cor do círculo: "+ cor);
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
