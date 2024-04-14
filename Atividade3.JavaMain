@@ -1,14 +1,14 @@
 package main;
-import objetos.Loja;
+import objetos.Produto1;
 import java.util.Scanner;
 
-public class lojaMain {
+public class produto1Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int opcao;
 
-        Loja[] l1 = new Loja[5];
+        Produto1[] l1 = new Produto1[5];
 
         //-----------------//
         do {
@@ -45,7 +45,7 @@ public class lojaMain {
         scanner.close();
     }
 
-    private static void cadastrarNovoProduto(Loja[] estoque, Scanner scanner) {
+    private static void cadastrarNovoProduto(Produto1[] estoque, Scanner scanner) {
         System.out.print("Nome do produto: ");
         String nome = scanner.next();
         System.out.print("Preço do produto: ");
@@ -55,7 +55,7 @@ public class lojaMain {
 
         for (int i = 0; i < estoque.length; i++) {
             if (estoque[i] == null) {
-                estoque[i] = new Loja(nome, preco, qtdeestoque);
+                estoque[i] = new Produto1(nome, preco, qtdeestoque);
                 System.out.println("Produto cadastrado com sucesso.");
                 System.out.println();
                 return;
@@ -65,11 +65,11 @@ public class lojaMain {
         System.out.println();
     }
 
-    private static void atualizarPrecoProduto(Loja[] estoque, Scanner scanner) {
+    private static void atualizarPrecoProduto(Produto1[] estoque, Scanner scanner) {
         System.out.print("Nome do produto a ser atualizado: ");
         String nome = scanner.next();
 
-        for (Loja produto : estoque) {
+        for (Produto1 produto : estoque) {
             if (produto != null && produto.getNome().equalsIgnoreCase(nome)) {
                 System.out.print("Novo preço: ");
                 double novoPreco = scanner.nextDouble();
@@ -83,11 +83,11 @@ public class lojaMain {
         System.out.println();
     }
 
-    private static void atualizarEstoqueProduto(Loja[] estoque, Scanner scanner) {
+    private static void atualizarEstoqueProduto(Produto1[] estoque, Scanner scanner) {
         System.out.print("Nome do produto a ser atualizado: ");
         String nome = scanner.next();
 
-        for (Loja produto : estoque) {
+        for (Produto1 produto : estoque) {
             if (produto != null && produto.getNome().equalsIgnoreCase(nome)) {
                 System.out.print("Nova quantidade em estoque: ");
                 int novaQtdeEstoque = scanner.nextInt();
@@ -101,11 +101,11 @@ public class lojaMain {
         System.out.println();
     }
 
-    private static void exibirDetalhesProduto(Loja[] estoque, Scanner scanner) {
+    private static void exibirDetalhesProduto(Produto1[] estoque, Scanner scanner) {
         System.out.print("Nome do produto: ");
         String nome = scanner.next();
 
-        for (Loja produto : estoque) {
+        for (Produto1 produto : estoque) {
             if (produto != null && produto.getNome().equalsIgnoreCase(nome)) {
                 System.out.println("Nome: " + produto.getNome());
                 System.out.println("Preço: " + produto.getPreco());
