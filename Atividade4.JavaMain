@@ -2,7 +2,7 @@ package main;
 import objetos.Circulo;
 import java.util.Scanner;
 
-public class circuloMain {
+public class CirculoMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
