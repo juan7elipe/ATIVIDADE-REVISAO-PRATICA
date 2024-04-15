@@ -2,7 +2,7 @@ package main;
 import objetos.Produto1;
 import java.util.Scanner;
 
-public class produto1Main {
+public class Produto1Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
