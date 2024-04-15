@@ -2,7 +2,7 @@ package main;
 import objetos.Produto;
 import java.util.Scanner;
 
-public class produtoMain {
+public class ProdutoMain {
     public static void main(String[] args) {
 
     int opcao;
