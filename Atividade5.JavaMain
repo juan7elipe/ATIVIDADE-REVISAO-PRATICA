@@ -1,0 +1,61 @@
+package main;
+import objetos.Produto3;
+import java.util.Scanner;
+
+public class produto3Main {
+    public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
+    String nome1;
+    String nome2;
+    String nome3;
+    double preco2;
+    double preco3;
+    int qtdeestoque3;
+
+    System.out.println("Nome do 1º produto: ");
+    nome1 = scanner.next();
+        System.out.println();
+    Produto3 produto1 = new Produto3(nome1);
+
+
+    System.out.println("Nome do 2º produto: ");
+    nome2 = scanner.next();
+    System.out.println("Preço do 2º produto: ");
+    preco2 = scanner.nextDouble();
+        System.out.println();
+    Produto3 produto2 = new Produto3(nome2, preco2);
+
+    System.out.println("Nome do 3º produto: ");
+    nome3 = scanner.next();
+    System.out.println("Preço do 3º produto: ");
+    preco3 = scanner.nextDouble();
+    System.out.println("Quantidade em estoque do 3º produto: ");
+    qtdeestoque3 = scanner.nextInt();
+        System.out.println();
+    Produto3 produto3 = new Produto3(nome3, preco3, qtdeestoque3);
+
+    //-----------------------------//
+
+        System.out.println("PRODUTO 1:");
+        System.out.println("Nome: " + produto1.getNome());
+        System.out.println("Preço: " + produto1.getPreco());
+        System.out.println("Estoque Disponível: " + produto1.getQtdeestoque());
+        System.out.println();
+
+
+        System.out.println("PRODUTO 2:");
+        System.out.println("Nome: " + produto2.getNome());
+        System.out.println("Preço: " + produto2.getPreco());
+        System.out.println("Estoque Disponível: " + produto2.getQtdeestoque());
+        System.out.println();
+
+
+        System.out.println("PRODUTO 3:");
+        System.out.println("Nome: " + produto3.getNome());
+        System.out.println("Preço: " + produto3.getPreco());
+        System.out.println("Estoque Disponível: " + produto3.getQtdeestoque());
+        System.out.println();
+    }
+}
