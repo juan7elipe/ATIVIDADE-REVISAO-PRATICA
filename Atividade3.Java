@@ -1,6 +1,6 @@
 package objetos;
 
-public class Produto1 {
+public class Produto2 {
 
     private String nome;
     private double preco;
